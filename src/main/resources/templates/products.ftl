@@ -12,7 +12,9 @@
 </ul>
 <br>
 
-<a href="/logout">logout</a>
+<a href="/logout?domain=coke">Coke logout</a>
 
+</br>
 
+<a href="/logout?domain=pepsi">Pepsi logout</a>
 </html>

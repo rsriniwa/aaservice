@@ -1,0 +1,9 @@
+{
+  "realm" : "coke",
+  "resource" : "vsmx",
+  "auth-server-url" : "http://localhost:8080/auth",
+  "ssl-required" : "external",
+  "credentials" : {
+    "secret": "password"
+  }
+}

@@ -1,6 +1,9 @@
 package com.example.productapp;
 
+import org.keycloak.adapters.springboot.KeycloakAutoConfiguration;
+import org.keycloak.adapters.springboot.MultitenantConfiguration;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,7 +14,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
-@SpringBootApplication
+
+@ImportAutoConfiguration(MultitenantConfiguration.class)
+@SpringBootApplication(exclude = {KeycloakAutoConfiguration.class})
 public class ProductAppApplication {
 
     public static void main(String[] args) {
